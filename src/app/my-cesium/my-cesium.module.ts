@@ -4,7 +4,6 @@ import { MyMapComponent } from './my-map/my-map.component';
 import { MyBillboardComponent } from './my-billboard/my-billboard.component';
 
 import { AngularCesiumModule, AngularCesiumWidgetsModule } from 'angular-cesium';
-import { MyLayerComponent } from './my-layer/my-layer.component';
 
 @NgModule({
   imports: [
@@ -12,7 +11,7 @@ import { MyLayerComponent } from './my-layer/my-layer.component';
     AngularCesiumModule.forRoot(),
     AngularCesiumWidgetsModule
   ],
-  declarations: [MyMapComponent, MyBillboardComponent, MyLayerComponent],
-  exports: [MyMapComponent, MyBillboardComponent, MyLayerComponent]
+  declarations: [MyMapComponent, MyBillboardComponent],
+  exports: [MyMapComponent, MyBillboardComponent]
 })
 export class MyCesiumModule { }
